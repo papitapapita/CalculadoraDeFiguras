@@ -22,38 +22,51 @@
                 <h3 class="calculate">Area</h3>
                 <div class="input-container">
                     <label for="area">side</label>
-                    <input class="input" type="text" name="value" id="area" placeholder="Enter value">
+                    <input class="input" type="text" name="value" id="area-input" placeholder="Enter value">
                 </div>
-                <input type="button" value="Calculate Area" class="calc-button calcArea">
-                <p id="result" class="result"></p>
-            </div>
-            <div class="side">
-                <h3>Side</h3>
-                <div class="input-container">
-                    <label for="side">area</label>
-                    <input class="input" type="text" name="value" id="side" placeholder="Enter value">
-                </div>
-                <input type="button" value="Calculate Side" class="calcSide">
-                <p id="result" class="result"></p>
+                <input type="button" value="Calculate Area" class="calc-button calcArea" id="area-button" onclick="calcArea()">
+                <p id="area-result" class="result"></p>
             </div>
             <div class="perimeter">
                 <h3>Perimeter</h3>
                 <div class="input-container">
                     <label for="perimeter">side</label>
-                    <input class="input" type="text" name="value" id="perimeter" placeholder="Enter value">
+                    <input class="input" type="text" name="value" id="perimeter-input" placeholder="Enter value">
                 </div>
-                <input type="button" value="Calculate Perimeter" class="calc-button calcPerimeter">
-                <p id="result" class="result"></p>
+                <input type="button" value="Calculate Perimeter" class="calc-button calcPerimeter" id="perimeter-button" onclick="calcPerimeter()">
+                <p id="perimeter-result" class="result"></p>
             </div>
             <div class="diagonal">
                 <h3>Diagonal</h3>
-                <label for="diagonal">side</label>
-                <input class="input" type="text" name="value" id="diagonal" placeholder="Enter value">
-                <input type="button" value="Calculate Diagonal" class="calc-button calcDiagonal">
+                <div class="input-container">
+                    <label for="diagonal">side</label>
+                    <input class="input" type="text" name="value" id="diagonal-input" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Diagonal" class="calc-button calcDiagonal" id="diagonal-button" onclick="calcDiagonal()">
+                <p id="diagonal-result" class="result"></p>
             </div>
-            <p id="result" class="result"></p>
+            <div class="side">
+                <h3>Side</h3>
+                <div class="input-container">
+                    <label for="side">area</label>
+                    <input class="input" type="text" name="value" id="side1-input" placeholder="Enter value">
+                </div>
+                <p>Or</p>
+                <div class="input-container">
+                    <label for="side">perimeter</label>
+                    <input class="input" type="text" name="value" id="side2-input" placeholder="Enter value">
+                </div>
+                <p>Or</p>
+                <div class="input-container">
+                    <label for="side">diagonal</label>
+                    <input class="input" type="text" name="value" id="side3-input" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Side" class="calc-button calcSide" id="side-button" onclick="calcSide()">
+                <p id="side-result" class="result"></p>
+            </div>
         </form>
     </div>
+    <script src="scripts/square.js"></script>
     <script src="https://kit.fontawesome.com/5ed7dce0d6.js" crossorigin="anonymous"></script>
 </body>
 </html>
