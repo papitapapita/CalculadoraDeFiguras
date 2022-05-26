@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Calculadora de Figuras Geométricas</title>
+</head>
+<body>
+    <h1 class="title">Shapes Calculator</h1>
+    <nav class="menu">
+        <ul class="list-container">
+            <li class="menu__item"><a href="square.html" class="menu__link">Square</a></li>
+            <li class="menu__item"><a href="#triangle-container" class="menu__link">Triangle</a></li>
+            <li class="menu__item"><a href="#circle-container" class="menu__link">Circle</a></li>
+        </ul>
+    </nav>
+    
+    <div class="shape-container" id="triangle-container">
+        <h2 class="subtitle">Triangle</h2>
+        <i class="fa-regular fa-triangle shape"></i>
+        <p class="calculate">area</p>
+        <form class="form" action="">
+            <label for="value">side</label>
+            <input class="input" type="text" name="value" id="value" placeholder="Enter value">
+        </form>
+        <p id="result" class="result"></p>
+    </div>
+    <div class="shape-container" id="circle-container">
+        <h2 class="subtitle">Circle</h2>
+        <i class="fa-regular fa-circle shape"></i>
+        <p class="calculate">area</p>
+        <form class="form" action="">
+            <label for="value">side</label>
+            <input class="input" type="text" name="value" id="value" placeholder="Enter value">
+        </form>
+        <p id="result" class="result"></p>
+    </div>
+    <script src="scripts/rectangle.js"></script>
+    <script src="scripts/square.js"></script>
+    <script src="scripts/triangle.js"></script>
+    <script src="scripts/circle.js"></script>
+    <script src="https://kit.fontawesome.com/5ed7dce0d6.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="return-container">
+        <a href="index.html" class="return-button">Return</a>
+    </div>
+    <div class="shape-container" id="square-container">
+        <h2 class="subtitle">Square</h2>
+        <i class="fa-regular fa-square shape"></i>
+        <form class="form" action="">
+            <div class="area">
+                <h3 class="calculate">Area</h3>
+                <div class="input-container">
+                    <label for="area">side</label>
+                    <input class="input" type="text" name="value" id="area" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Area" class="calc-button calcArea">
+                <p id="result" class="result"></p>
+            </div>
+            <div class="side">
+                <h3>Side</h3>
+                <div class="input-container">
+                    <label for="side">area</label>
+                    <input class="input" type="text" name="value" id="side" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Side" class="calcSide">
+                <p id="result" class="result"></p>
+            </div>
+            <div class="perimeter">
+                <h3>Perimeter</h3>
+                <div class="input-container">
+                    <label for="perimeter">side</label>
+                    <input class="input" type="text" name="value" id="perimeter" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Perimeter" class="calc-button calcPerimeter">
+                <p id="result" class="result"></p>
+            </div>
+            <div class="diagonal">
+                <h3>Diagonal</h3>
+                <label for="diagonal">side</label>
+                <input class="input" type="text" name="value" id="diagonal" placeholder="Enter value">
+                <input type="button" value="Calculate Diagonal" class="calc-button calcDiagonal">
+            </div>
+            <p id="result" class="result"></p>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/5ed7dce0d6.js" crossorigin="anonymous"></script>
+</body>
+</html>
