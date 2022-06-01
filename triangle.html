@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Triangle</title>
+</head>
+<body>
+    <div class="return-container">
+        <a href="index.html" class="return-button">Return</a>
+    </div>
+    <div class="shape-container" id="triangle-container">
+        <h2 class="subtitle">Triangle</h2>
+        <i class="fa-regular fa-triangle shape"></i>
+        <form class="form" action="">
+            <div class="area">
+                <h3 class="calculate">Area</h3>
+                <div class="input-container">
+                    <label for="area1">base</label>
+                    <input class="input" type="text" name="area1" id="area1-input" placeholder="Enter value">
+                </div>
+                <div class="input-container">
+                    <label for="area2">height</label>
+                    <input class="input" type="text" name="area2" id="area2-input" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Area" class="calc-button calcArea" id="area-button" onclick="calcArea()">
+                <p id="area-result" class="result"></p>
+            </div>
+            <div class="perimeter">
+                <h3>Perimeter</h3>
+                <div class="input-container">
+                    <label for="perimeter1">side a</label>
+                    <input class="input" type="text" name="perimeter1" id="perimeter1-input" placeholder="Enter value">
+                </div>
+                <div class="input-container">
+                    <label for="perimeter2">base</label>
+                    <input class="input" type="text" name="perimeter2" id="perimeter2-input" placeholder="Enter value">
+                </div>
+                <div class="input-container">
+                    <label for="perimeter3">side c</label>
+                    <input class="input" type="text" name="perimeter3" id="perimeter3-input" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Perimeter" class="calc-button calcPerimeter" id="perimeter-button" onclick="calcPerimeter()">
+                <p id="perimeter-result" class="result"></p>
+            </div>
+            <div class="base">
+                <h3>Base</h3>
+                <div class="input-container">
+                    <label for="base1">area</label>
+                    <input class="input" type="text" name="base1" id="base1-input" placeholder="Enter value">
+                </div>
+                <div class="input-container">
+                    <label for="base2">height</label>
+                    <input class="input" type="text" name="base2" id="base2-input" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Base" class="calc-button" id="base-button" onclick="calcBase()">
+                <p id="base-result" class="result"></p>
+            </div>
+            <div class="height">
+                <h3>height</h3>
+                <div class="input-container">
+                    <label for="height1">area</label>
+                    <input class="input" type="text" name="height1" id="height1-input" placeholder="Enter value">
+                </div>
+                <div class="input-container">
+                    <label for="height2">base</label>
+                    <input class="input" type="text" name="height2" id="height2-input" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Height" class="calc-button" id="height-button" onclick="calcHeight()">
+                <p id="height-result" class="result"></p>
+            </div>
+            <div class="sideA">
+                <h3>SideA</h3>
+                <div class="input-container">
+                    <label for="sideA1">perimeter</label>
+                    <input class="input" type="text" name="sideA1" id="sideA1-input" placeholder="Enter value">
+                </div>
+                <div class="input-container">
+                    <label for="sideA2">base</label>
+                    <input class="input" type="text" name="sideA2" id="sideA2-input" placeholder="Enter value">
+                </div>
+                <div class="input-container">
+                    <label for="sideA3">side a</label>
+                    <input class="input" type="text" name="sideA3" id="sideA3-input" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Side A" class="calc-button" id="sideA-button" onclick="calcSideA()">
+                <p id="sideA-result" class="result"></p>
+            </div>
+            <div class="sideC">
+                <h3>SideC</h3>
+                <div class="input-container">
+                    <label for="sideC1">perimeter</label>
+                    <input class="input" type="text" name="sideC1" id="sideC1-input" placeholder="Enter value">
+                </div>
+                <div class="input-container">
+                    <label for="sideC2">base</label>
+                    <input class="input" type="text" name="sideC2" id="sideC2-input" placeholder="Enter value">
+                </div>
+                <div class="input-container">
+                    <label for="sideC3">side a</label>
+                    <input class="input" type="text" name="sideC3" id="sideC3-input" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Side A" class="calc-button" id="sideC-button" onclick="calcSideC()">
+                <p id="sideC-result" class="result"></p>
+            </div>
+        </form>
+    </div>
+    <script src="scripts/triangle.js"></script>
+    <script src="https://kit.fontawesome.com/5ed7dce0d6.js" crossorigin="anonymous"></script>
+</body>
+</html>

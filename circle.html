@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Circle</title>
+</head>
+<body>
+    <div class="return-container">
+        <a href="index.html" class="return-button">Return</a>
+    </div>
+    <div class="shape-container" id="circle-container">
+        <h2 class="subtitle">Circle</h2>
+        <i class="fa-regular fa-circle shape"></i>
+        <form class="form" action="">
+            <div class="area">
+                <h3 class="calculate">Area</h3>
+                <div class="input-container">
+                    <label for="area">radius</label>
+                    <input class="input" type="text" name="value" id="area-input" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Area" class="calc-button calcArea" id="area-button" onclick="calcArea()">
+                <p id="area-result" class="result"></p>
+            </div>
+            <div class="perimeter">
+                <h3>Perimeter</h3>
+                <div class="input-container">
+                    <label for="perimeter">radius</label>
+                    <input class="input" type="text" name="value" id="perimeter-input" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Perimeter" class="calc-button calcPerimeter" id="perimeter-button" onclick="calcPerimeter()">
+                <p id="perimeter-result" class="result"></p>
+            </div>
+            <div class="diameter">
+                <h3>Diameter</h3>
+                <div class="input-container">
+                    <label for="diagonal">area</label>
+                    <input class="input" type="text" name="value" id="diameter1-input" placeholder="Enter value">
+                </div>
+                <p>Or</p>
+                <div class="input-container">
+                    <label for="diagonal">radius</label>
+                    <input class="input" type="text" name="value" id="diameter2-input" placeholder="Enter value">
+                </div>
+                <p>Or</p>
+                <div class="input-container">
+                    <label for="diagonal">perimeter</label>
+                    <input class="input" type="text" name="value" id="diameter3-input" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Diameter" class="calc-button calcDiameter" id="diameter-button" onclick="calcDiameter()">
+                <p id="diameter-result" class="result"></p>
+            </div>
+            <div class="radius">
+                <h3>Radius</h3>
+                <div class="input-container">
+                    <label for="side">area</label>
+                    <input class="input" type="text" name="value" id="radius1-input" placeholder="Enter value">
+                </div>
+                <p>or</p>
+                <div class="input-container">
+                    <label for="side">perimeter</label>
+                    <input class="input" type="text" name="value" id="radius2-input" placeholder="Enter value">
+                </div>
+                <p>or</p>
+                <div class="input-container">
+                    <label for="side">diameter</label>
+                    <input class="input" type="text" name="value" id="radius3-input" placeholder="Enter value">
+                </div>
+                <input type="button" value="Calculate Radius" class="calc-button calcSide" id="side-button" onclick="calcRadius()">
+                <p id="radius-result" class="result"></p>
+            </div>
+        </form>
+    </div>
+    <script src="scripts/circle.js"></script>
+    <script src="https://kit.fontawesome.com/5ed7dce0d6.js" crossorigin="anonymous"></script>
+</body>
+</html>

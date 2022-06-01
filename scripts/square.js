@@ -104,13 +104,10 @@ function calcDiagonal(){
 
 function calcSide(){
     if(input.side1.value != undefined && input.side1.value != ""){
-        console.log("Hi2");
         square.setArea(parseInt(input.side1.value));
     }else if(input.side2.value != undefined && input.side2.value != ""){
-        console.log(input.side2.value);
         square.setPerimeter(parseInt(input.side2.value));
     }else if(input.side3.value != undefined && input.side3.value != ""){
-        console.log(input.side3.value);
         square.setDiagonal(parseInt(input.side3.value));
     }
     result.side.innerText = square.calcSide();
